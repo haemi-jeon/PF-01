@@ -357,24 +357,6 @@ ol, ul {list-style: none;}
   100% {opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);}
 }
 
-@media screen and (max-width: 834.9px) {
-  .header__toggle-btn {display: block; align-items: center;}
-  .header__toggle-btn .ico-menu {display: block; width: 28px; height: 28px; background-image: url(../images/mb-menu_btn.svg);}
-  .header .header__menu {display: none; flex-direction: column; position: absolute; top: 80px; left: 0; padding: 20px 0; background-color: var(--white);}
-  .header__menu .gnb {flex-direction: column; padding: 0;}
-  .header__menu .gnb > li {margin: 0; text-align: center;}
-  .header__menu .gnb > li > a {display: inline-block; height: 50px; font-size: 1.8rem; line-height: 50px;}
-  .header__menu .gnb > li.active > a::after {bottom: 10px;}
-  .header__menu .btn-area {flex-direction: column; width: 100%; margin-left: unset; padding: 32px 20px 0;}
-  .header__menu .btn-area .to_service {margin-right: 0;}
-  .header__menu .btn-area .to_service .btn {height: auto; padding: 0 0 24px; background-color: transparent; border-color: transparent; color: var(--primary); font-size: 1.8rem; text-decoration: underline;}
-  .header__menu .btn-area .btn-group {width: 100%;}
-  .header__menu .btn-area .btn-group .btn {flex: 1;}
-  .header.visible .header__toggle-btn .ico-menu {background-image: url(../images/mb-menu_close.svg);}
-  .header.visible .header__menu {display: flex; box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, .3);}
-  .header.visible .header__menu .btn-area .btn--pure {height: 44px !important; padding: 10px 25px; border: 1px solid var(--border); font-size: 1.6rem; font-weight: 700; letter-spacing: -1px;}
-}
-
 
 /******************** LNB ********************/
 .lnb {width: 190px; padding: 20px 0; border-right: 1px solid #d8d8d8;}
@@ -875,36 +857,3 @@ ol, ul {list-style: none;}
 .pop_ft {display: flex; padding: 4px; background-color: #cccccc; font-size: 14px; text-align: right;}
 .custom_control_text {margin-right: 4px;}
 .pop_ft button {margin-left: auto; border: none; background: none;}
-
-
-/*--------------------
-    hover 설정 
---------------------*/
-/* 터치 디바이스 아닌 마우스 디바이스에서만 적용 */
-@media (hover: hover) {
-  /* COMMON */
-  .table_row > .row_link:hover .row_item.title .ellipsis {text-decoration: underline; color: #2985db;}
-  .page-item .page-link:hover {background-color: #f6f6f6; border-color:#bababa;}
-  /* HEADER */
-  .header__menu .gnb > li > a:hover {color: var(--primary);}
-  /* CONTENT */
-  .content section > .inner .desc-area .more a:hover {text-decoration: underline;}
-  .home__notice .slide_link:hover .text {text-decoration: underline;}
-  .banner.function ~ .tab-content section .visual-area .item:hover {margin-top: -15px; background-color: rgba(0, 202, 232, 0.05); box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, .2);}
-  .lnb > li > a:hover span::after {opacity: 1; transform: scaleX(1);}
-  .withdrawal .flex_item:not(.done) .item-link:hover {border-color: var(--primary);}
-  .withdrawal .flex_item:not(.done) .item-link:hover .title {color: var(--primary);}
-  /* FOOTER */
-  .footer .site_info .fnb li a:hover {text-decoration: underline;}
-  .footer .site_info .media .app a:hover {background-color: var(--white); box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1); color: #000;}
-  .footer .site_info .media .app a.ios:hover span::before {background-image: url(../images/ico-ios_hover.svg);}
-  .footer .site_info .media .app a.aos:hover span::before {background-image: url(../images/ico-android_hover.svg);}
-  .footer .site_info .media .sns a:hover {background-color: var(--white); box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);}
-  .footer .site_info .media .sns a.blog:hover {background-image: url(../images/ico-blog_hover.svg);}
-  .footer .site_info .media .sns a.facebook:hover {background-image: url(../images/ico-facebook_hover.svg);}
-  .footer .site_info .media .sns a.instagram:hover {background-image: url(../images/ico-instagram_hover.svg);}
-  .footer .site_info .media .sns a.utube:hover {background-image: url(../images/ico-utube_hover.svg);}
-  /* FLOATING BAR */
-  .fixed-btns a:hover .text {visibility: visible; opacity: 1;}
-  .fixed-btns a:hover .ico {opacity: 1;}
-}
