@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82.059" height="76.937" viewBox="0 0 82.059 76.937">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:#333}.cls-2{stroke:transparent}
+        </style>
+    </defs>
+    <g id="ico_web01" transform="translate(1.438 -2.313)">
+        <path id="Path" d="M0 0h10.312v48.664H0z" transform="translate(13.312 7.969)" style="fill:#00cae8"/>
+        <g id="그룹_1" data-name="그룹 1" transform="translate(-58.562 2.813)">
+            <path id="Path-2" data-name="Path" class="cls-2" d="M64.373 59.063h-5.624V5.625H5.625v53.438H0V2.813A2.813 2.813 0 0 1 2.812 0h58.749a2.813 2.813 0 0 1 2.812 2.813z" transform="translate(66.812)"/>
+            <path id="Path-3" data-name="Path" class="cls-3" d="M0 0h39.135v5.625H0z" transform="translate(78.998 10.313)"/>
+            <path id="Path-4" data-name="Path" class="cls-3" d="M0 0h39.135v5.625H0z" transform="translate(78.998 21.313)"/>
+            <path id="Path-5" data-name="Path" class="cls-3" d="M0 0h39.135v5.625H0z" transform="translate(78.998 32.313)"/>
+            <path id="Path-6" data-name="Path" class="cls-3" d="M0 0h39.135v5.625H0z" transform="translate(78.998 43.313)"/>
+        </g>
+        <path id="합치기_1" data-name="합치기 1" class="cls-2" d="M-6385.314-544.5h-16.874a2.814 2.814 0 0 1-2.813-2.811v-56.876a2.814 2.814 0 0 1 2.813-2.811h11.21v5.624h-8.4v51.25h69.81v-11.25h-65.092V-567h67.9a2.814 2.814 0 0 1 2.813 2.813v16.875a2.814 2.814 0 0 1-2.813 2.811z" transform="translate(6404.063 623.25)"/>
+    </g>
+</svg>

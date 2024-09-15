@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마이페이지 | 아이브웍스</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="aibworks.com" />
+  <meta property="og:url" content="www.aibworks.com" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="아이브웍스 - 근태관리 90일 무료체험" />
+  <meta property="og:description" content="모바일앱에서 간편하게 근태체크와 휴가 신청!, 부서장은 구성원의 근태 상태 확인과 승인 신청을 간편하게 승인!" />
+  <meta property="og:image" content="../assets/images/img-og.png" />
+  <link rel="shortcut icon" href="../assets/styles/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="196x196" href="../assets/styles/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/styles/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/styles/favicon-16x16.png" />
+  <link rel="mask-icon" href="../assets/styles/safari-pinned-tab.svg" color="#3FBDE3" />
+  <link rel="stylesheet" type="text/css" href="../modules/bootstrap-5.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../modules/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+  <link rel="stylesheet" type="text/css" href="../modules/aos/aos.css">
+  <link rel="stylesheet" type="text/css" href="../modules/swiper/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/styles/marerial_icons.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/styles/media_query.css" />
+</head>
+
+<body>
+  <div id="root">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="inner">
+        <h1 class="header__logo">
+          <a href="../index.html">
+            <img src="../assets/images/logo.svg" alt="아이브웍스 로고" />
+          </a>
+        </h1>
+        <button type="button" class="header__toggle-btn">
+          <i class="ico-menu"></i>
+        </button>
+        <div class="header__menu">
+          <ul class="gnb">
+            <li><a href="1_주요기능.html">주요기능</a></li>
+            <li><a href="2_비용안내.html">비용안내</a></li>
+            <li><a href="3_1_공지사항_목록.html">고객지원</a></li>
+          </ul>
+          <div class="btn-area">
+            <div class="to_service">
+              <a href="/" class="btn btn--cyan">서비스 바로가기</a>
+            </div>
+            <div class="btn-group">
+              <a href="0_1_마이페이지_.html" class="btn btn--pure">마이페이지</a>
+              <button type="button" class="btn btn--md" onclick="location.href='0_로그인.html'">로그아웃</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- // HEADER -->
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="inner">
+
+        <!-- LNB -->
+        <ul class="lnb">
+          <li class="active">
+            <a href="0_1_마이페이지_.html"><span>마이페이지</span></a>
+          </li>
+          <li>
+            <a href="0_2_결제내역.html"><span>결제 내역</span></a>
+          </li>
+          <li>
+            <a href="0_3_회사정보관리.html"><span>회사정보관리</span></a>
+          </li>
+          <li>
+            <a href="0_4_회원탈퇴.html"><span>회원 탈퇴</span></a>
+          </li>
+        </ul>
+
+        <!-- MAIN CONTENT -->
+        <div class="main_cont my_page">
+          <div class="cont_header">
+            <h3 class="title">마이페이지</h3>
+            <p class="desc">
+              아이브웍스 서비스의 현황을 마이페이지에서 한번에 확인 할 수 있습니다. <br />
+              회원가입 후 기업인증이 완료되면 서비스 신청을 진행해 주세요.
+            </p>
+          </div>
+          <div class="summary_box">
+            <div class="summary">
+              <p class="corp_info"><span class="name">(주) 아이브랩</span><span class="value">인증완료</span></p>
+              <p class="admin_info"><span class="name">관리자</span><span class="value">홍길동</span></p>
+              <p class="service_info"><span class="name">근태관리 Basic</span><span class="value">무료체험중</span></p>
+            </div>
+          </div>
+          <div class="cont_body">
+            <section class="tab_sect">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <button type="button" class="nav-link active" id="usingServiceTab" data-bs-toggle="pill"
+                    data-bs-target="#usingService">이용중인 서비스</button>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="nav-link" id="serviceHistoryTab" data-bs-toggle="pill"
+                    data-bs-target="#serviceHistory">서비스 이력</button>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="usingService" aria-labelledby="usingServiceTab">
+                  <div class="table_area">
+                    <table class="table th_row">
+                      <tbody>
+                        <tr>
+                          <th scope="row">서비스 명</th>
+                          <td>근태관리 Basic</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">서비스 신청일</th>
+                          <td>2021년 3월 15일 13:00</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">무료체험 기간</th>
+                          <td>90일, 2021-03-15 ~ 2021-05-14</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">사용인원</th>
+                          <td>75명</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">월 이용요금</th>
+                          <td>149,250원 (부가세 별도), (1,990원/월 x 75명)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">결제방식</th>
+                          <td>매월 마지막일 자동결제 (결제 시작일 : 2021년 5월 31일)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn-area">
+                    <button type="button" class="btn btn--md" data-bs-toggle="modal"
+                      data-bs-target="#changeUserNumModal">사용인원 변경</button>
+                    <button type="button" class="btn btn--md" data-bs-toggle="modal"
+                      data-bs-target="#changeCardModal">자동 결제카드 등록/변경</button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="serviceHistory" aria-labelledby="serviceHistoryTab">
+                  <div class="table_area">
+                    <table class="table">
+                      <colgroup>
+                        <col style="width: 154px;">
+                        <col style="width: 140px;">
+                        <col style="width: auto;">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">변경일시</th>
+                          <th scope="col">서비스 명</th>
+                          <th scope="col">내용</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2021-05-16 14:22:15</td>
+                          <td>근태관리 Basic</td>
+                          <td class="desc_td">
+                            <a href="#historyDetails" class="td_link" data-bs-toggle="modal"
+                              data-bs-target="#historyDetails">사용인원 변경</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2021-05-15 14:22:15</td>
+                          <td>근태관리 Basic</td>
+                          <td class="desc_td">
+                            <a href="#historyDetails01" class="td_link" data-bs-toggle="modal"
+                              data-bs-target="#historyDetails">자동결제카드 변경</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2021-05-14 23:59:59</td>
+                          <td>근태관리 Basic</td>
+                          <td class="desc_td">
+                            <a href="#historyDetails01" class="td_link" data-bs-toggle="modal"
+                              data-bs-target="#historyDetails">무료체험 기간 종료</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2021-03-15 09:11:06</td>
+                          <td>근태관리 Basic</td>
+                          <td class="desc_td">
+                            <a href="#historyDetails01" class="td_link" data-bs-toggle="modal"
+                              data-bs-target="#historyDetails">서비스 신청 완료</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="table_noti">
+                      <p>※ 내용을 클릭하시면 상세 정보를 확인할 수 있습니다.</p>
+                      <p>※ 기타 궁금한 사항은 고객센터를 이용해 주세요. 070-8892-7160 | help@aiblab.co.kr</p>
+                    </div>
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a href="javascript:void(0)" class="page-link prev" tabindex="-1"></a>
+                      </li>
+                      <li class="page-item active">
+                        <a href="javascript:void(0)" class="page-link">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="javascript:void(0)" class="page-link">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="javascript:void(0)" class="page-link">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="javascript:void(0)" class="page-link">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="javascript:void(0)" class="page-link">5</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="javascript:void(0)" class="page-link">6</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="javascript:void(0)" class="page-link">7</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="javascript:void(0)" class="page-link">8</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="javascript:void(0)" class="page-link">9</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="javascript:void(0)" class="page-link">10</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="javascript:void(0)" class="page-link next"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- // CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="inner">
+        <div class="site_info">
+          <ul class="fnb">
+            <li><a href="이용약관.html">이용약관</a></li>
+            <li><a href="개인정보처리방침.html">개인정보처리방침</a></li>
+            <li><a href="도입문의.html">도입문의</a></li>
+          </ul>
+          <div class="media">
+            <div class="app">
+              <a href="https://apps.apple.com/kr/app/%EC%95%84%EC%9D%B4%EB%B8%8C%EC%9B%8D%EC%8A%A4/id1481026591"
+                class="ios"><span>APP STORE</span></a>
+              <a href="https://play.google.com/store/apps/details?id=com.aibworks.id&hl=ko&pli=1"
+                class="aos"><span>GOOGLE PLAY</span></a>
+            </div>
+            <div class="sns">
+              <a href="javascript:void(0)" class="blog"></a>
+              <a href="javascript:void(0)" class="facebook"></a>
+              <a href="javascript:void(0)" class="instagram"></a>
+              <a href="javascript:void(0)" class="utube"></a>
+            </div>
+          </div>
+        </div>
+        <div class="corp_info">
+          <div class="logo">
+            <img src="../assets/images/logo_gray.svg" alt="아이브웍스 로고">
+          </div>
+          <div class="info_list">
+            <ul>
+              <li>(주) 아이브랩</li>
+              <li>대표 서영주 김용우</li>
+              <li>13449 경기도 성남시 수정구 창업로 54 판교제2테크노밸리 판교기업성장센터 525, 526호</li>
+              <li>사업자등록번호 545-81-01078</li>
+              <li>통신판매업신고 제 2019-성남수정-0502 호</li>
+              <li>sales@aiblab.co.kr</li>
+              <li>070-8892-7160</li>
+            </ul>
+            <p class="copyright">Copyright © AIBLab Inc. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- //FOOTER -->
+  </div>
+
+  <!-- MODAL: 사용인원 변경 -->
+  <div class="modal fade" id="changeUserNumModal" aria-labelledby="ModalLabel" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">사용인원 변경</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="service_change">
+            <p class="tit">사용인원 선택</p>
+            <div class="form-group">
+              <div class="range_group">
+                <div class="range_input">
+                  <input type="text" class="range_slider" value="100" />
+                </div>
+                <span class="range_text">100명</span>
+              </div>
+              <div class="payment">
+                <p class="total">월 이용요금 <span class="monthly_price">199,900 원</span></p>
+                <p class="calculation">1,990원/월 x <span class="people_num">100명</span> (부가세 별도)</p>
+              </div>
+            </div>
+          </div>
+          <div class="service_summary">
+            <div class="title">요약 정보</div>
+            <ul class="dash_list">
+              <li>사용인원 : <span class="people_num">100명</span></li>
+              <li>결제금액 : 매월 <span class="monthly_price">199,900 원</span> (부가세 별도)</li>
+              <li>결제방식 : 월 말일 자동결제 (결제 시작일 : <span class="start_date">2021년 5월 31일</span>)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="btn-area">
+            <button type="button" class="btn btn--black">변경</button>
+            <button type="button" class="btn" data-bs-dismiss="modal">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL: 자동결제카드 변경 -->
+  <div class="modal fade" id="changeCardModal" aria-labelledby="ModalLabel" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">자동결제카드 변경</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="service_change">
+            <p class="tit">등록된 자동결제 카드</p>
+            <div class="card_info">
+              <p class="name">KB국민카드</p>
+              <p class="num">1234 56** **** 3456</p>
+            </div>
+          </div>
+          <div class="service_summary">
+            <div class="title">요약 정보</div>
+            <ul class="dash_list">
+              <li>사용인원 : <span class="people_num">100명</span></li>
+              <li>결제금액 : 매월 <span class="monthly_price">199,900 원</span> (부가세 별도)</li>
+              <li>결제방식 : 월 말일 자동결제 (결제 시작일 : <span class="start_date">2021년 5월 31일</span>)</li>
+            </ul>
+          </div>
+          <div class="service_consent">
+            <ol class="num_list">
+              <li>수집/이용 목적 : 서비스 자동결제</li>
+              <li>수집/이용 항목 : 신용카드 자동결제 / 신용카드 번호</li>
+              <li>보유/이용기간 : 5년 (전자상거래등에서의 소비자보호에 관한 법률: 대금결제 및 재화 등의 공급에 관한 기록)</li>
+              <li>위 개인정보 수집/이용에 동의하지 않으실 경우, 해당서비스를 이용하실 수 없습니다.</li>
+            </ol>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" id="example" class="custom-control-input">
+              <label for="example" class="custom-control-label">개인 정보 수집, 이용 동의 (필수)</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="btn-area">
+            <button type="button" class="btn btn--black">변경</button>
+            <button type="button" class="btn" data-bs-dismiss="modal">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL: 서비스이력 상세 -->
+  <div class="modal fade" id="historyDetails" aria-labelledby="ModalLabel" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">상세 정보</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table th_row">
+            <tbody>
+              <tr>
+                <th scope="row">서비스 명</th>
+                <td>근태관리 Basic</td>
+              </tr>
+              <tr>
+                <th scope="row">변경일시</th>
+                <td>2021년 3월 15일 13:00</td>
+              </tr>
+              <tr>
+                <th scope="row">내용</th>
+                <td>사용인원 변경</td>
+              </tr>
+              <tr>
+                <th scope="row">상세 정보</th>
+                <td>변경 전 75명, 변경 후 100명</td>
+              </tr>
+              <tr>
+                <th scope="row">내용</th>
+                <td>자동결제카드 변경</td>
+              </tr>
+              <tr>
+                <th scope="row">상세 정보</th>
+                <td>변경 전 1234 56** **** 1234, 변경 후 1234 56** **** 6789</td>
+              </tr>
+              <tr>
+                <th scope="row">내용</th>
+                <td>무료체험 기간 종료</td>
+              </tr>
+              <tr>
+                <th scope="row">상세 정보</th>
+                <td>90일, 2021-03-15 ~ 2021-06-12</td>
+              </tr>
+              <tr>
+                <th scope="row">내용</th>
+                <td>서비스 신청 완료</td>
+              </tr>
+              <tr>
+                <th scope="row">상세 정보</th>
+                <td>
+                  사용인원 75명<br />
+                  월 이용요금 149,250원 (부가세 별도), (1,990원/월 x 75명)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <div class="btn-area">
+            <button type="button" class="btn" data-bs-dismiss="modal">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../modules/jquery-3.5.1.min.js"></script>
+  <script src="../modules/jquery.cookie.js"></script>
+  <script src="../modules/popper.min.js"></script>
+  <script src="../modules/bootstrap-5.0.0/js/bootstrap.js"></script>
+  <script src="../modules/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+  <script src="../modules/aos/aos.js"></script>
+  <script src="../modules/swiper/swiper.min.js"></script>
+  <script src="../assets/scripts/main.js"></script>
+</body>
+
+</html>
