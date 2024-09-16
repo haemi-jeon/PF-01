@@ -10,7 +10,7 @@
 FE개발자가 git에 올린 코드를 공유받아<br/>
 실제 개발 환경에서 필요한 module에 따른 UI/UX 개선에 참여했습니다.<br/><br/>
 
-<a href="https://haemi-jeon.github.io/PF-01/">DEMO 이동</a><br/>
+<a href="https://haemi-jeon.github.io/PF-01/" target="_blank">DEMO 이동</a><br/>
 
 Screenshot<br/>
 <img src="https://github.com/user-attachments/assets/cd75441d-44b4-4309-b9cd-1c87af954e9d" width="600" />
