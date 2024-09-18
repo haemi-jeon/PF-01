@@ -6,6 +6,10 @@
 
 ---
 
+<a href="https://haemi-jeon.github.io/PF-01/" target="_blank">DEMO 이동</a>
+
+---
+
 ### 화면 구조
 
 - 회원가입 / 로그인
@@ -22,10 +26,6 @@
   - 회사정보관리
   - 회원 탈퇴
 - 이용약관 / 개인정보처리방침 / 도입문의
-
----
-
-<a href="https://haemi-jeon.github.io/PF-01/" target="_blank">DEMO 이동</a>
 
 ---
 
