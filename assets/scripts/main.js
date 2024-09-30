@@ -25,25 +25,21 @@ $(function () {
         header.addClass('sticky');
         scrolled = true;
 
-        document
-          .querySelectorAll('.header__menu .nav-link')
-          .forEach((linkItem) => {
-            linkItem.addEventListener('click', () => {
-              window.scrollTo(0, 200);
-            });
+        document.querySelectorAll('.tab_bar .nav-link').forEach((linkItem) => {
+          linkItem.addEventListener('click', () => {
+            window.scrollTo(0, 200);
           });
+        });
       }
       if (80 > $(window).scrollTop() && scrolled) {
         header.removeClass('sticky');
         scrolled = false;
 
-        document
-          .querySelectorAll('.header__menu .nav-link')
-          .forEach((linkItem) => {
-            linkItem.addEventListener('click', () => {
-              window.scrollTo(0, 0);
-            });
+        document.querySelectorAll('.tab_bar .nav-link').forEach((linkItem) => {
+          linkItem.addEventListener('click', () => {
+            window.scrollTo(0, 0);
           });
+        });
       }
     });
   })();
